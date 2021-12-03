@@ -1,0 +1,32 @@
+<h3>{{viewTitle}}</h3>
+<form action ="/employee" method="POST" autocomplete="off">
+ <input type="hidden" name="id" value ="{{employees._id}}"   
+
+    <div class="mb-3">
+        <label for="full" class="form-label">Full Name</label>
+        <input type="text" id ="full" class="form-control" name="fulName" placeholder="Full name" />
+    </div>
+
+    <div class="mb-3">
+        <label for="mail" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id ="mail" placeholder="Email" />
+    </div>
+
+<div class="row">
+    <div class="col-md">
+        <div>
+             <label for="mobile" class="form-label">Mobile</label>
+      <input type="text" id="mobile" class="form-control" name="mobile" placeholder="Mobile">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div>
+ <label for="city" class="form-label">City</label>
+      <input type="text" id="city" class="form-control" name="city" placeholder="City">
+    </div>
+</div>
+<div class="mt-3">
+    <button type="submit" class="btn btn-primary"> <i class="fas fa-database"></i>  Submit</button>
+    <a class="btn btn-secondary" href="/employee/list">View All</a>
+</div>
+</form>
